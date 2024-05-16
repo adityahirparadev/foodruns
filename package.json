@@ -1,0 +1,36 @@
+{
+  "name": "foodruns",
+  "version": "1.0.0",
+  "description": "Food Serving to Home",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adityahirparadev/foodruns.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adityahirparadev/foodruns/issues"
+  },
+  "homepage": "https://github.com/adityahirparadev/foodruns",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http-errors": "^2.0.0",
+    "joi": "^17.13.1",
+    "joi-objectid": "^4.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.5",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}
