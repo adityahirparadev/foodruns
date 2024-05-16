@@ -7,24 +7,14 @@
 </head>
 <body>
     <h1>REGISTER PAGE</h1>
-    <form action="/user/login" method="post">
+    <form action="/user/register" method="post" enctype="application/x-www-form-urlencoded">
         <label for="username">Username</label>
-        <input type="text" id="username">
+        <input type="text" name="username" id="username">
         <br>
         <label for="password">Password</label>
-        <input type="password">
+        <input type="password" name="password" id="password">
         <br>
-        <label for="username">Gender</label>
-        <input type="radio">
-        <label for="username">Male</label>
-        <br>
-        <input type="radio">
-        <label for="username">Female</label>
-        <br>
-        <input type="radio">
-        <label for="username">Other</label>
-        <br>
-        <button type="submit">Register</button>
+        <button type="submit"> REGISTER</button>
     </form>
 </body>
 </html>

@@ -1,20 +1,24 @@
 import User from "../models/user.model.js"
 
-export const register = async (req,res) =>{
+export const register = async (req, res) => {
     try {
-        await User.create({
-            username:"aditya"
+        console.log(req.body);
+        const { username, password, } = req.body;
+        const userData = new User({
+            username,
+            password,
         });
-        res.send("Register Successfully");
+        res.status(201);
+        res.redirect("/user/login");
     } catch (error) {
         console.log("500 error 500");
         res.send(error);
     }
 }
-export const login = async (req,res) =>{
+export const login = async (req, res) => {
     try {
         await User.create({
-            username:"aditya"
+            username: "aditya"
         });
         res.redirect("/user/dashboard");
     } catch (error) {
