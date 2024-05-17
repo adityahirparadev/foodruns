@@ -32,5 +32,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 initializePassport(passport);
 app.use("/user", userRoutes);
-
+app.use("/",(req,res)=>{
+  res.send("jdshzv")
+})
 export default app;
