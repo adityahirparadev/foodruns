@@ -1,221 +1,38 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-family: "Mulish", sans-serif; */
-  font-family: "Inter", sans-serif;
-}
-.active {
-  color: red;
-}
-.nav_bg {
-  background-color: #8c8c8c;
-  min-height: 70px;
-}
-.anchor_tag a {
-  color: black;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-.navbar-brand {
-  font-size: 1.5rem !important;
-}
-.navbar-brand.logo-skc {
-  padding: 0 20px;
-  border-radius: 5px;
-  color: black !important;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
-}
-.anchor_tag a.active {
-  border-radius: 5px;
-  color: white !important;
-  /* font-weight: bold; */
-  border-bottom: 1px solid white;
-}
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 0;
+.App {
+  text-align: center;
 }
 
-.anchor_tag a:hover {
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
   color: white;
 }
-.navbar-toggler-icon {
-  border-radius: 0.375rem;
-}
-.navbar-toggler {
-  background-color: white !important;
-}
-.anchor_tag button,
-.navbar-toggler-icon {
-  background-color: #fff !important;
-}
-.anchor_tag .navbar-toggler-icon {
-  color: red !important;
-}
-#header {
-  width: 100%;
-  height: 100vh;
-}
-.brand_name {
-  color: #16165f;
-  text-shadow: 0 0 2px aqua;
-}
-.card {
-  width: 18rem;
+
+.App-link {
+  color: #61dafb;
 }
 
-.welcome_letter_space h1 {
-  letter-spacing: 5px;
-  color: #795529;
-}
-.welcome_letter_space p {
-  letter-spacing: 5px;
-  color: #795529;
-}
-
-.contact_label label {
-  color: #795529;
-}
-.contact_label input::placeholder {
-  color: #8c8c8c;
-}
-.contact_us {
-  color: #795529;
-}
-@keyframes apple {
-  0% {
-    transform: translateY(-40px);
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  25% {
-    transform: translateY(-20px);
+  to {
+    transform: rotate(360deg);
   }
-  50% {
-    transform: translateY(0px);
-  }
-  75% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translateY(40px);
-  }
-}
-.header_image img {
-  width: 500px;
-  animation-name: apple;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: linear;
-}
-@media screen and (max-width: 364px) {
-  .anchor_tag button {
-    height: 30px;
-    width: 30px;
-  }
-  .anchor_tag .navbar-toggler-icon {
-    margin-left: -8px;
-    margin-top: -5px;
-    height: 20px;
-    width: 20px;
-  }
-}
-.signup_image {
-  width: 30vw;
-  max-height: 80vh;
-  background-color: transparent;
-  background-blend-mode: lighten;
-}
-.single_form_field {
-  border-bottom: 2px solid black;
-}
-.single_form_field input {
-  border: none;
-  background-color: transparent;
-  color: #795529;
-}
-.single_form_field input::placeholder {
-  color: #8c8c8c;
-}
-input.form_control:focus {
-  border: none;
-  outline: none;
-}
-.form_control {
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #8c8c8c;
-  appearance: none;
-  background-clip: padding-box;
-}
-
-.register_form_left {
-  padding: 20px 80px !important;
-}
-.register_form label {
-  padding: 7px 0 !important;
-}
-.form_submit_input {
-  padding: 7px 20px;
-  margin-left: -10px;
-  background-color: #795529 !important;
-  color: white !important;
-}
-.signup {
-  color: #795529;
-  padding: 0 200px;
-  background-color: white;
-}
-.signup_content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 20px;
-  min-height: 80vh;
-  box-shadow: 5px 5px 20px black;
-}
-.form_title {
-  padding: 0;
-  font-weight: bold;
-  font-size: 35px;
-  margin-left: -10px;
-  margin-bottom: 20px;
-}
-.already_register {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.login_content {
-  margin-top: 70px !important;
-}
-.login_image {
-  width: 25vw;
-  max-height: 70vh;
-  background-color: transparent;
-  background-blend-mode: lighten;
-}
-.login_content_main {
-  padding: 80px 100px;
-}
-.email_div {
-  position: relative;
-  top: 0;
-}
-
-.paragraph_email {
-  width: 800px;
-  position: absolute;
-  top: 6px;
-  left: 320px;
-  color: rgba(255, 0, 0, 0.621);
 }
