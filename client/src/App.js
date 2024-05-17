@@ -7,10 +7,10 @@ import WebSocketComponent from './WebSocketComponent';
 function App() {
   return (
     <>
-    <WebSocketComponent/>
     <Header/>
     <User/>
     <Footer/>
+    <WebSocketComponent/>
     </>
   );
 }
