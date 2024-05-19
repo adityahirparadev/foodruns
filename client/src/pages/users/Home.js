@@ -2,12 +2,11 @@ import React, { useEffect,useState } from 'react';
 // import React from 'react';
 import axios from 'axios';
 
-function Home() {
+const Home = () => {
   const [backendData, setBackendData] = useState([{}])
   useEffect(() => {
     axios.get('/api')
     .then(response => {
-      console.log("::::::::::::", response.data);
       setBackendData(response.data);
     })
     .catch(error => {

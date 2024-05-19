@@ -8,19 +8,19 @@ import session from 'express-session';
 import flash from 'connect-flash';
 import userRoutes from "./routers/user.routes.js";
 import { initializePassport } from "./middleware/passportjs/passport.js";
-import { webSocketRun } from "./config/server.js";
+// import { webSocketRun } from "./config/server.js";
 const {SESSION_SECRET} = process.env;
 const app = express();
 dotenv.config();
 
 
-app.use(cors());
-// app.use(cors({
-//   origin: 'https://silver-train-jjrpwjrwxj593jpvj-8000.app.github.dev',
-//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//   credentials: true
-// }));
-webSocketRun();
+// app.use(cors());
+app.use(cors({
+  origin: 'https://silver-train-jjrpwjrwxj593jpvj-7000.app.github.dev',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
+// webSocketRun();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());

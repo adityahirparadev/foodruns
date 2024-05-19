@@ -3,6 +3,14 @@ import { register, login } from "../controllers/user.controller.js";
 import passport from "passport";
 const Router = express.Router();
 
+Router.route("/")
+    .get((req, res) => {
+        res.status(200).json({
+            data:"idfshu"
+        });
+    })
+    .post(register);
+
 Router.route("/register")
     .get((req, res) => {
         res.status(200).json({

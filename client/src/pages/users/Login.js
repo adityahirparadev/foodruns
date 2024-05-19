@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Login() {
+const Login = () => {
   return (
     <>
       <h1>Login Page</h1>

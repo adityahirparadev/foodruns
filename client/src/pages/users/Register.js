@@ -1,11 +1,10 @@
 import React from 'react';
-
-function Reegister() {
+const Register = () => {
   return (
     <>
-      <h1>Reegister Page</h1>
+      <h1>Register Page</h1>
     </>
   );
 }
 
-export default Reegister;
+export default Register;
