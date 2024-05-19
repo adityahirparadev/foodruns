@@ -5,7 +5,9 @@ const Router = express.Router();
 
 Router.route("/register")
     .get((req, res) => {
-        res.render("register");
+        res.status(200).json({
+            data:"idfshu"
+        });
     })
     .post(register);
 

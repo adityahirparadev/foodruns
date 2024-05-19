@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 const WebSocketComponent = () => {
   useEffect(() => {
-    const socket = new WebSocket('ws://localhost:8080');
+    const socket = new WebSocket('wss://silver-train-jjrpwjrwxj593jpvj-8000.app.github.dev:8000/ws');
     socket.onopen = () => {
       console.log('Connected to WebSocket server');
     };
@@ -11,7 +11,7 @@ const WebSocketComponent = () => {
     };
 
     socket.onclose = () => {
-      console.log('Disconnected from WebSocket server');
+      console.log('Web nthi chaltu');
     };
 
     socket.onerror = (error) => {
@@ -24,7 +24,9 @@ const WebSocketComponent = () => {
   }, []);
   return (
     <>
+    <h1>123</h1>
     </>
+    
   );
 };
 

@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/adityahirparadev/foodruns/issues"
   },
-  "homepage": "https://github.com/adityahirparadev/foodruns",
+  "homepage": "https://adityahirparadev.github.io/foodruns",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",

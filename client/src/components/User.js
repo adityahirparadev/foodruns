@@ -9,7 +9,7 @@ function User() {
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/api" element={<Home />} />
         <Route exact path="/user/register" element={<Register />} />
         <Route exact path="/user/login" element={<Login />} />
       </Routes>
