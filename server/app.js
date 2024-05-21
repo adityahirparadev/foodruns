@@ -36,8 +36,8 @@ app.use(passport.session());
 initializePassport(passport);
 app.use("/user", userRoutes);
 app.use("/api",(req,res)=>{
-  res.json({
-      "users":["userOne","usertwo"]
+  res.status(201).json({
+      users:"data"
   })
 });
 export default app;
